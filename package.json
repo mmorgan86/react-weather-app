@@ -1,5 +1,5 @@
 {
-  "name": "weather-it",
+  "name": "weatherit",
   "version": "1.0.0",
   "description": "Simple weather app that allows you to compare the temperature, humidity and pressure in different cities",
   "main": "index.js",
@@ -9,8 +9,7 @@
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
-    "predeploy": "npm run build",
-    "deploy": "react-weather-app -d build"
+    "predeploy": "npm run build"
   },
   "author": "",
   "license": "ISC",
@@ -26,12 +25,13 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-preset-stage-1": "^6.1.18",
-    "lodash": "^3.10.1",
+    "lodash": "^4.17.11",
     "react": "16.3.2",
     "react-dom": "16.3.2",
     "react-redux": "5.0.7",
     "react-sparklines": "^1.7.0",
     "redux": "4.0.0",
-    "redux-promise": "^0.6.0"
+    "redux-promise": "^0.6.0",
+    "url-parse": "^1.4.3"
   }
 }
